@@ -135,7 +135,7 @@ const Navbar = ({ siteTitle, location }) => {
         ].join(" ")}
         onTransitionEnd={(e) => handleTransitionEnd(e.propertyName)}
       >
-        <li>
+        <li className={classes.addPaddingRight}>
           <Link
             to="/blog"
             onClick={() => closeMenuWhenCurrentLinkPressed("/blog")}
@@ -143,10 +143,10 @@ const Navbar = ({ siteTitle, location }) => {
             Blog
           </Link>
         </li>
-        <li>
+        <li className={classes.addPaddingRight}>
           <Link to="/blog">Topics</Link>
         </li>
-        <li>
+        <li className={classes.addPaddingRight}>
           <Link to="/about">Contact</Link>
         </li>
         <li>
