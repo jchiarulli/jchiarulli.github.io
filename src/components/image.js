@@ -16,17 +16,26 @@ import Img from "gatsby-image";
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "profile-pic.jpg" }) {
+      profilePic: file(relativePath: { eq: "profile-pic.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 250, maxHeight: 250, quality: 100) {
             ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
       }
     }
   `);
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+  return (
+    <Img
+      fluid={data.profilePic.childImageSharp.fluid}
+      style={{ display: "flex", flex: "1" }}
+      imgStyle={{ borderRadius: "50%" }}
+    />
+  );
 };
+
+// sizes: "(max-width: 1024px) 200px, (min-width: 1025px) 39vw, 81vw"
 
 export default Image;

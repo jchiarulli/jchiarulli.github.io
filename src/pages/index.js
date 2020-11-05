@@ -1,32 +1,26 @@
 import React from "react";
-import { Link } from "gatsby";
-
+import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Image from "../components/image";
-import profilePic from "../images/profile-pic.jpg";
 import SEO from "../components/seo";
+import classes from "./index.module.less";
 
 const IndexPage = (props) => (
   <Layout location={props.location}>
     <SEO title="Home" />
-    <h1>Hey everyone!</h1>
-    <img
-      src={profilePic}
-      alt="profilePic"
-      style={{
-        width: "200px",
-        height: "400px",
-        borderRadius: "40px",
-      }}
-    />
-    <p>My name is Jason Chiarulli.</p>
-    <p>I enjoy learning about JavaSricpt & Python.</p>
-    <p>One day this blog will look much better.</p>
-    <p>But for now this will do.</p>
-    <p>Check out the navbar toggle when the page is 1025px or less in width.</p>
-    <p>It's pretty nifty.</p>
-
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <div className={classes.header}>
+      <h2>About Me</h2>
+    </div>
+    <div className={classes.profile_pic_and_about_me}>
+      <Image />
+      <div className={classes.about_me}>
+        <p>
+          Hey everyone! Welcome to Jay@Machine. I'm Jay. You'll find posts,
+          tutorials, & videos here covering Web Development, Machine Learning,
+          Drones, and anything else that peeks my interest.
+        </p>
+      </div>
+    </div>
   </Layout>
 );
 

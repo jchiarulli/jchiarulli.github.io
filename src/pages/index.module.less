@@ -1,0 +1,37 @@
+@import (reference) "../style/theme.less";
+@import "~rfs/less";
+
+.header {
+  .font-size(2rem);
+}
+
+.about_me {
+  .font-size(1.5rem);
+}
+
+@media @laptop {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .profile_pic_and_about_me {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .about_me {
+      display: flex;
+      flex: 0.5;
+      align-items: center;
+    }
+  }
+}
+
+@media @desktop {
+}
+
+@media @tv {
+}

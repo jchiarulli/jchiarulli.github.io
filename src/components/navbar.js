@@ -26,7 +26,7 @@ const Navbar = ({ siteTitle, location }) => {
   const { width } = useWindowSize();
   useEffect(() => {
     // console.log("here");
-    if (width > 1025 && shouldSmallNavbarStateReset) {
+    if (width > 1024 && shouldSmallNavbarStateReset) {
       // console.log("if width > 1025");
       setShouldSmallNavbarStateReset(false);
       setIsTransitionEnabled(false);
@@ -34,7 +34,7 @@ const Navbar = ({ siteTitle, location }) => {
       setIsMenuCollapseComplete(true);
       setIsToggleDisabled(false);
       document.getElementsByTagName("html")[0].style.overflow = "";
-    } else if (width <= 1025 && !shouldSmallNavbarStateReset) {
+    } else if (width <= 1024 && !shouldSmallNavbarStateReset) {
       // console.log("else if width <= 1025");
       setShouldSmallNavbarStateReset(true);
     }

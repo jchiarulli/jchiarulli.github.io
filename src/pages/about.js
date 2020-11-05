@@ -8,7 +8,7 @@ const AboutPage = () => (
     <div>
       <h1>Hey everyone!</h1>
       <p>My name is Jason Chiarulli.</p>
-      <p>I enjoy learning about JavaSricpt & Python.</p>
+      <p>I enjoy learning about JavaScript & Python.</p>
     </div>
   </Layout>
 );
