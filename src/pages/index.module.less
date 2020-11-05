@@ -1,16 +1,22 @@
 @import (reference) "../style/theme.less";
 @import "~rfs/less";
 
-.header {
+.about_me_header,
+.projects_header {
   .font-size(2rem);
 }
 
-.about_me {
+.project_titles {
+  .font-size(1.75rem);
+}
+
+.about_me,
+.drone_project {
   .font-size(1.5rem);
 }
 
 @media @laptop {
-  .header {
+  .about_me_header {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
@@ -26,6 +32,27 @@
       display: flex;
       flex: 0.5;
       align-items: center;
+    }
+  }
+
+  .projects_header {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  h3 {
+    padding-top: 1.5rem;
+  }
+
+  .projects {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .drone_project {
+      display: flex;
     }
   }
 }
