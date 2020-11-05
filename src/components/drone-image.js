@@ -16,12 +16,7 @@ const DroneImage = () => {
     }
   `);
 
-  return (
-    <Img
-      fluid={data.drone.childImageSharp.fluid}
-      style={{ display: "flex", flex: "1" }}
-    />
-  );
+  return <Img fluid={data.drone.childImageSharp.fluid} />;
 };
 
 export default DroneImage;

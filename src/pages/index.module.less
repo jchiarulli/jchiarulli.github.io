@@ -1,64 +1,38 @@
 @import (reference) "../style/theme.less";
 @import "~rfs/less";
 
-.about_me_header,
-.projects_header {
+.section_titles {
   .font-size(2rem);
+  .padding-top(2rem);
+  .padding-bottom(1.5rem);
+  text-align: center;
 }
 
-.project_titles {
+.sub_section_titles {
   .font-size(1.75rem);
+  .padding-bottom(1.5rem);
 }
 
-.about_me,
-.drone_project {
-  .font-size(1.5rem);
-}
-
-@media @laptop {
-  .about_me_header {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-  }
-
-  .profile_pic_and_about_me {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    .about_me {
-      display: flex;
-      flex: 0.5;
-      align-items: center;
-    }
-  }
-
-  .projects_header {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-  }
-
-  h3 {
-    padding-top: 1.5rem;
-  }
-
-  .projects {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    .drone_project {
-      display: flex;
-    }
-  }
-}
-
-@media @desktop {
+.section_summaries {
+  .font-size(1.25rem);
+  padding-top: 1rem;
 }
 
 @media @tv {
+  .profile_pic_and_about_me {
+    display: flex;
+    flex-wrap: wrap;
+
+    .profile_pic_wrapper {
+      flex: 1;
+      min-width: 16.5rem;
+    }
+
+    .about_me {
+      display: flex;
+      flex: 2;
+      align-items: center;
+      min-width: 32.875rem;
+    }
+  }
 }
