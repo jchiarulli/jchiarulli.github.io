@@ -43,6 +43,7 @@
 // }
 
 // Move to theme & rename theme to breakpoints?
+@import "~fontsource-roboto/400.css";
 @import "~rfs/less";
 
 @rfs-breakpoint-unit: em;
@@ -54,12 +55,13 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: #0b0c10;
 }
 
 nav {
+  background-color: #0a0c10;
   display: flex;
-  background: #222;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   overflow: auto;
@@ -68,12 +70,22 @@ nav {
 }
 
 a {
-  color: white;
+  color: #66fcf1;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ccc;
+  opacity: 0.8;
 }
 
-// > 1200px set static padding b/w uls and lis
+h1 {
+  color: #66fcf1;
+}
+
+h2 {
+  color: #66fcf1;
+}
+
+p {
+  color: #c5c6c7;
+}
