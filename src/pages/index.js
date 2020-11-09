@@ -26,11 +26,10 @@ const IndexPage = (props) => (
     <div className={classes.project_one}>
       <div className={classes.about_project_one}>
         <h2 className={classes.sub_section_titles}>Object Detection Drone</h2>
-
         <p className={classes.section_summaries}>
-          Check out this project if you're interested in building an object
-          detection drone using a Navio2, Raspberry Pi 3B, ArduPilot, Python,
-          and OpenCV.
+          If you're interested in building an object detection drone using a
+          Navio2, Raspberry Pi 3B, ArduPilot, Python, and OpenCV, then check out
+          this project.
         </p>
       </div>
       <div className={classes.project_one_pic_wrapper}>

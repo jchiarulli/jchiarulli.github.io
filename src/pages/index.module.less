@@ -16,14 +16,24 @@
   .font-size(1.5rem);
 }
 
-@media only screen and (max-width: 37.75em) {
+@media only screen and (max-width: 33.75em) {
+  .profile_pic_wrapper {
+    padding-bottom: 1.25rem;
+    max-width: 7.8125rem;
+  }
+
+  .project_one_pic_wrapper {
+    padding-top: 1.25rem;
+    max-width: 10.9375rem;
+  }
+}
+
+@media only screen and (min-width: 33.8125rem) {
   .profile_pic_wrapper {
     padding-right: 75%;
     padding-bottom: 1.25rem;
   }
-}
 
-@media only screen and (max-width: 43.0625em) {
   .project_one_pic_wrapper {
     padding-right: 65%;
     padding-top: 1.25rem;
@@ -48,7 +58,9 @@
       min-width: 25.1875rem;
     }
   }
+}
 
+@media only screen and (min-width: 43.125em) {
   .project_one {
     display: flex;
     flex-wrap: wrap;
@@ -68,6 +80,8 @@
     .project_one_pic_wrapper {
       flex: 3.5;
       min-width: 13.78125rem;
+      padding-right: 0;
+      padding-top: 0;
     }
   }
 }
