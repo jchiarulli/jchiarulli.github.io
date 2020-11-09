@@ -42,11 +42,8 @@
 //   overscroll-behavior: contain;
 // }
 
-// Move to theme & rename theme to breakpoints?
+// Move to theme?
 @import "~fontsource-roboto/400.css";
-@import "~rfs/less";
-
-@rfs-breakpoint-unit: em;
 
 * {
   box-sizing: border-box;
@@ -56,12 +53,39 @@
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #0b0c10;
+  background-image: linear-gradient(
+      45deg,
+      rgba(86, 86, 86, 0.04) 0%,
+      rgba(86, 86, 86, 0.04) 50%,
+      rgba(169, 169, 169, 0.04) 50%,
+      rgba(169, 169, 169, 0.04) 71%,
+      rgba(251, 251, 251, 0.04) 71%,
+      rgba(251, 251, 251, 0.04) 100%
+    ),
+    linear-gradient(
+      45deg,
+      rgba(86, 86, 86, 0.04) 0%,
+      rgba(86, 86, 86, 0.04) 56%,
+      rgba(169, 169, 169, 0.04) 56%,
+      rgba(169, 169, 169, 0.04) 67%,
+      rgba(251, 251, 251, 0.04) 67%,
+      rgba(251, 251, 251, 0.04) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(86, 86, 86, 0.04) 0%,
+      rgba(86, 86, 86, 0.04) 4%,
+      rgba(169, 169, 169, 0.04) 4%,
+      rgba(169, 169, 169, 0.04) 75%,
+      rgba(251, 251, 251, 0.04) 75%,
+      rgba(251, 251, 251, 0.04) 100%
+    ),
+    linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
 }
 
 nav {
-  background-color: #0a0c10;
   display: flex;
+  padding: 0.625rem 1.25rem;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   overflow: auto;
@@ -69,23 +93,24 @@ nav {
   z-index: 1;
 }
 
+// Set locally if colors change for the tag
 a {
-  color: #66fcf1;
   text-decoration: none;
+  color: #9a9a9a;
 }
 
 a:hover {
-  opacity: 0.8;
+  opacity: 0.65;
 }
 
 h1 {
-  color: #66fcf1;
+  color: #408697;
 }
 
 h2 {
-  color: #66fcf1;
+  color: #858112;
 }
 
 p {
-  color: #c5c6c7;
+  color: #a1b5bb;
 }

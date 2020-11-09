@@ -3,36 +3,71 @@
 
 .section_titles {
   .font-size(2rem);
-  .padding-top(2rem);
-  .padding-bottom(1.5rem);
+  padding: 5.5rem 0 2.75rem;
   text-align: center;
 }
 
 .sub_section_titles {
   .font-size(1.75rem);
-  .padding-bottom(1.5rem);
+  padding-bottom: 1.5rem;
 }
 
 .section_summaries {
-  .font-size(1.25rem);
-  padding-top: 1rem;
+  .font-size(1.5rem);
 }
 
-@media @tv {
+@media only screen and (max-width: 37.75em) {
+  .profile_pic_wrapper {
+    padding-right: 75%;
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 43.0625em) {
+  .project_one_pic_wrapper {
+    padding-right: 65%;
+    padding-top: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 37.8125em) {
   .profile_pic_and_about_me {
     display: flex;
     flex-wrap: wrap;
 
     .profile_pic_wrapper {
-      flex: 1;
-      min-width: 16.5rem;
+      flex: 2.5;
+      min-width: 10.125rem;
+      padding-right: 1.25rem;
     }
 
     .about_me {
       display: flex;
-      flex: 2;
+      flex: 7.5;
       align-items: center;
-      min-width: 32.875rem;
+      min-width: 25.1875rem;
+    }
+  }
+
+  .project_one {
+    display: flex;
+    flex-wrap: wrap;
+
+    .about_project_one {
+      display: flex;
+      flex: 6.5;
+      flex-direction: column;
+      min-width: 26.84375rem;
+      padding-right: 1.25rem;
+
+      h2 {
+        align-self: center;
+      }
+    }
+
+    .project_one_pic_wrapper {
+      flex: 3.5;
+      min-width: 13.78125rem;
     }
   }
 }

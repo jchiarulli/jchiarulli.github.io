@@ -17,18 +17,26 @@ const IndexPage = (props) => (
       <div className={classes.about_me}>
         <p className={classes.section_summaries}>
           Hey everyone! Welcome to Jay@Machine. I'm Jay. You'll find posts,
-          tutorials, & videos here covering Web Development, Machine Learning,
+          tutorials, and videos here covering Web Development, Machine Learning,
           Drones, and anything else that peeks my interest.
         </p>
       </div>
     </div>
     <h1 className={classes.section_titles}>Projects</h1>
-    <h2 className={classes.sub_section_titles}>Object Detection Drone</h2>
-    <DroneImage />
-    <p className={classes.section_summaries}>
-      Here's an object detection drone I built using the Navio2, Python, and
-      APMPlanner2.
-    </p>
+    <div className={classes.project_one}>
+      <div className={classes.about_project_one}>
+        <h2 className={classes.sub_section_titles}>Object Detection Drone</h2>
+
+        <p className={classes.section_summaries}>
+          Check out this project if you're interested in building an object
+          detection drone using a Navio2, Raspberry Pi 3B, ArduPilot, Python,
+          and OpenCV.
+        </p>
+      </div>
+      <div className={classes.project_one_pic_wrapper}>
+        <DroneImage />
+      </div>
+    </div>
   </Layout>
 );
 
