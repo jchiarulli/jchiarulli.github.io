@@ -36,6 +36,4 @@ const Image = () => {
   );
 };
 
-// sizes: "(max-width: 1024px) 200px, (min-width: 1025px) 39vw, 81vw"
-
 export default Image;
