@@ -1,9 +1,12 @@
 @import (reference) "../style/theme.less";
 @import "~rfs/less";
 
+// increase the minimum image size
+// maybe use rfs for top & bottom paddings
+
 .section_titles {
   .font-size(2rem);
-  padding: 5.5rem 0 2.75rem;
+  padding: 5.5rem 0 2.25rem;
   text-align: center;
 }
 
@@ -16,19 +19,19 @@
   .font-size(1.5rem);
 }
 
-@media only screen and (max-width: 33.75em) {
+@media only screen and (max-width: 37.5em) {
   .profile_pic_wrapper {
     padding-bottom: 1.25rem;
-    max-width: 7.8125rem;
+    max-width: 8.75rem;
   }
 
   .project_one_pic_wrapper {
     padding-top: 1.25rem;
-    max-width: 10.9375rem;
+    max-width: 12.25rem;
   }
 }
 
-@media only screen and (min-width: 33.8125rem) {
+@media only screen and (min-width: 37.5625em) {
   .profile_pic_wrapper {
     padding-right: 75%;
     padding-bottom: 1.25rem;
