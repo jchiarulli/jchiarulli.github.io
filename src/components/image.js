@@ -30,7 +30,6 @@ const Image = () => {
   return (
     <Img
       fluid={data.profilePic.childImageSharp.fluid}
-      style={{ display: "flex", flex: "1" }}
       imgStyle={{ borderRadius: "50%" }}
     />
   );

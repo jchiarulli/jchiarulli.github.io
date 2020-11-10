@@ -101,7 +101,6 @@ const Navbar = ({ siteTitle, location }) => {
       {/* {console.log("width", width)} */}
       <ul className={classes.home_and_toggle}>
         <li className={classes.logo}>
-          {/*color: "#cec80d"*/}
           <Link to="/" onClick={() => closeMenuWhenCurrentLinkPressed("/")}>
             Jay
             <span style={{ color: "#408697" }}>@</span>

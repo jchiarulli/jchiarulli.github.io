@@ -22,18 +22,34 @@ const IndexPage = (props) => (
         </p>
       </div>
     </div>
+
     <h1 className={classes.section_titles}>Projects</h1>
     <div className={classes.project_one}>
       <div className={classes.about_project_one}>
         <h2 className={classes.sub_section_titles}>Object Detection Drone</h2>
         <p className={classes.section_summaries}>
           If you're interested in building an object detection drone using a
-          Navio2, Raspberry Pi 3B, ArduPilot, Python, and OpenCV, then check out
-          this project.
+          Navio2, Raspberry Pi, and Python, then check out this project.
         </p>
       </div>
       <div className={classes.project_one_pic_wrapper}>
         <DroneImage />
+      </div>
+    </div>
+
+    <div className={classes.project_two}>
+      <div className={classes.about_project_two}>
+        <h2 className={classes.sub_section_titles}>My Blog</h2>
+        <p className={classes.section_summaries}>
+          You can find the code for my blog{" "}
+          <a href="https://github.com/jchiarulli/jchiarulli.github.io">here</a>.
+          I'm using Gatsby as the framework.
+        </p>
+      </div>
+      <div className={classes.project_two_logo_wrapper}>
+        <h1 className={classes.project_two_logo}>
+          Jay<span style={{ color: "#408697" }}>@</span>Machine
+        </h1>
       </div>
     </div>
   </Layout>

@@ -16,7 +16,12 @@ const DroneImage = () => {
     }
   `);
 
-  return <Img fluid={data.drone.childImageSharp.fluid} />;
+  return (
+    <Img
+      fluid={data.drone.childImageSharp.fluid}
+      imgStyle={{ borderRadius: "20%" }}
+    />
+  );
 };
 
 export default DroneImage;
