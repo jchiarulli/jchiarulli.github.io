@@ -9,7 +9,7 @@ import classes from "./index.module.less";
 const IndexPage = (props) => (
   <Layout location={props.location}>
     <SEO title="Home" />
-    <h1 className={classes.section_titles}>About Me</h1>
+    <h1 className={classes.about_me_title}>About Me</h1>
     <div className={classes.profile_pic_and_about_me}>
       <div className={classes.profile_pic_wrapper}>
         <Image />

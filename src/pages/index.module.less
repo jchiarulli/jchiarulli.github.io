@@ -1,9 +1,15 @@
 @import (reference) "../style/theme.less";
 @import "~rfs/less";
 
+.about_me_title {
+  .font-size(2rem);
+  text-align: center;
+  color: #408697;
+}
+
 .section_titles {
   .font-size(2rem);
-  padding: 5.5rem 0 2.75rem;
+  padding: 5.625rem 0 2.75rem;
   text-align: center;
   color: #408697;
 }
@@ -16,11 +22,6 @@
 
 .section_summaries {
   .font-size(1.375rem);
-}
-
-.project_one,
-.project_two {
-  padding-bottom: 5.5rem;
 }
 
 .project_two_logo {
@@ -42,6 +43,10 @@
 
 // 46.9375rem = 731px
 @media only screen and (max-width: 46.9375rem) {
+  .about_me_title {
+    padding: 2.75rem 0 2.75rem;
+  }
+
   .profile_pic_and_about_me {
     display: flex;
     flex-direction: column;
@@ -50,7 +55,7 @@
       align-self: center;
       width: 25%;
       min-width: 9.375rem;
-      padding-bottom: 1.25rem;
+      padding-bottom: 2.75rem;
     }
 
     .about_me {
@@ -62,6 +67,10 @@
 
 // 732px = 45.75em
 @media only screen and (min-width: 45.75em) {
+  .about_me_title {
+    padding: 5.625rem 0 2.75rem;
+  }
+
   .profile_pic_and_about_me {
     display: flex;
     flex-direction: row;
@@ -102,6 +111,8 @@
       min-width: 13.125rem;
       padding-top: 1.25rem;
     }
+
+    padding-bottom: 2.75rem;
   }
 
   .project_two {
@@ -124,6 +135,8 @@
       align-items: center;
       justify-content: center;
     }
+
+    padding-bottom: 2.75rem;
   }
 }
 
@@ -149,6 +162,8 @@
     .project_one_pic_wrapper {
       flex: 3.6;
     }
+
+    padding-bottom: 5.625rem;
   }
 
   .project_two {
@@ -173,5 +188,7 @@
 
       padding-left: 2rem;
     }
+
+    padding-bottom: 5.625rem;
   }
 }
